@@ -22,6 +22,11 @@
     cursor: pointer;
     text-wrap: nowrap;
     transition: all 0.2s ease-in-out;
+    font-weight: bold;
+
+    &:hover {
+      background-color: #3b3b3b;
+    }
 
     &.active {
       color: #000;

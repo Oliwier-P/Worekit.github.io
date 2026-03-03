@@ -1,23 +1,35 @@
 import "./Project.scss"
 import {Icon} from "../../assets/Icon.jsx";
+import PropTypes from "prop-types";
 
-export const Project = () => {
+export const Project = ({ name, description, link, image, technologies }) => {
     return <div className="project">
         <div className="project__header">
-            <div className="name">Party Games</div>
-            <div className="github"><Icon name="github" /></div>
+            <div className="name">{name}</div>
+            <a href={link} target="_blank" rel="noopener noreferrer">
+                <div className="github"><Icon name="github" /></div>
+            </a>
         </div>
 
         <div className="project-content">
-            <div className="project-content__description">Aplikacja robiona w grupie dwuosobowej. Aplikacja do
-                rozgrywania mini-gier przez wideorozmowę. W trakcie tworzenia.
+            <div className="project-content__description">{description}</div>
+            <div className="project-content__preview">
+                <img src={image} alt="project image" />
             </div>
-            <div className="project-content__preview"></div>
         </div>
 
         <div className="project-technologies">
-            <div className="project-technologies__item">React</div>
-            <div className="project-technologies__item">Node.js</div>
+            {technologies.map((item, index) => (
+                <div className="project-technologies__item" key={index}>{item}</div>
+            ))}
         </div>
     </div>
 }
+
+Project.propTypes = {
+    name: PropTypes.string.isRequired,
+    description: PropTypes.string,
+    link: PropTypes.string,
+    image: PropTypes.string,
+    technologies: PropTypes.arrayOf(PropTypes.string)
+};

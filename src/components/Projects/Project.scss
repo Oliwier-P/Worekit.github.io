@@ -27,9 +27,14 @@
       align-items: center;
       justify-content: center;
       cursor: pointer;
+      border: 1px solid #616161;
+
+      &:hover {
+        background-color: #373737;
+      }
 
       svg {
-        width: 80%;
+        width: 60%;
         color: #FFA500;
       }
     }
@@ -44,14 +49,18 @@
     gap: 1rem;
 
     &__description {
-      font-size: clamp(0.9rem, 1vw, 1.2rem);
-      color: #fff;
+      font-size: clamp(1rem, 1vw, 1.2rem);
+      color: #ababab;
     }
 
     &__preview {
       width: 100%;
       aspect-ratio: 16 / 9;
       border-radius: 0.5rem;
+
+      img {
+        width: 100%;
+      }
     }
   }
 
@@ -64,6 +73,7 @@
     &__item {
       color: #fff;
       font-size: 0.9rem;
+      font-weight: bold;
       background-color: #424242;
       padding: 6px 12px;
       border-radius: 1rem;
