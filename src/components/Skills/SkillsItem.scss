@@ -9,6 +9,14 @@
     height: clamp(4rem, 3rem + 2vw, 6rem);
     border-radius: 1rem;
     background-color: #2B2C2C;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    svg {
+      width: 60%;
+    }
   }
 
   .name {

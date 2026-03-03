@@ -2,17 +2,17 @@ import "./Skills.scss"
 import {SkillsItem} from "./SkillsItem.jsx";
 
 const skillsArray = [
-    { name: "React" },
-    { name: "SASS" },
-    { name: "Javascript" },
-    { name: "Typescript" },
-    { name: "Postgres" },
-    { name: "SQLite" },
-    { name: "Node.js" },
-    { name: "Git" },
-    { name: "GitHub" },
-    { name: "Figma" },
-    { name: "Docker" },
+    { name: "React", logo: "react" },
+    { name: "SASS", logo: "sass" },
+    { name: "Javascript", logo: "javascript" },
+    { name: "Typescript", logo: "typescript" },
+    { name: "Postgres", logo: "postgres" },
+    { name: "SQLite", logo: "sqlite" },
+    { name: "Node.js", logo: "nodejs" },
+    { name: "Git", logo: "git" },
+    { name: "GitHub", logo: "github" },
+    { name: "Figma", logo: "figma" },
+    { name: "Docker", logo: "docker" },
 ]
 
 export const Skills = () => {
@@ -20,7 +20,7 @@ export const Skills = () => {
         <div className="skills__header">Umiejętności</div>
 
         <div className="skills-list">
-            {skillsArray.map((skill, index) => <SkillsItem key={index} name={skill.name} />)}
+            {skillsArray.map((skill, index) => <SkillsItem key={index} name={skill.name} logo={skill.logo} />)}
         </div>
     </div>
 }

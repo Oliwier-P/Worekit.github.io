@@ -1,10 +1,11 @@
 import "./Project.scss"
+import {Icon} from "../../assets/Icon.jsx";
 
 export const Project = () => {
     return <div className="project">
         <div className="project__header">
             <div className="name">Party Games</div>
-            <div className="github"></div>
+            <div className="github"><Icon name="github" /></div>
         </div>
 
         <div className="project-content">
