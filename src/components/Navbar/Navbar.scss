@@ -16,8 +16,16 @@
     font-family: "Poppins", sans-serif;
     color: #fff;
     border: none;
+    border-radius: 5rem;
+    padding: 0.5rem;
     background: none;
     cursor: pointer;
     text-wrap: nowrap;
+    transition: all 0.2s ease-in-out;
+
+    &.active {
+      color: #000;
+      background-color: #FFA500;
+    }
   }
 }

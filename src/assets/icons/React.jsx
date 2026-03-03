@@ -1,6 +1,5 @@
 export const React = () => {
-    // eslint-disable-next-line react/no-unknown-property
-    return <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true"
+    return <svg xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" aria-hidden="true"
                 role="img" className="iconify iconify--logos"
                 preserveAspectRatio="xMidYMid meet" viewBox="0 0 256 228">
         <path fill="#00D8FF"

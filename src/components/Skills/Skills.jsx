@@ -1,5 +1,6 @@
 import "./Skills.scss"
 import {SkillsItem} from "./SkillsItem.jsx";
+import PropTypes from "prop-types";
 
 const skillsArray = [
     { name: "React", logo: "react" },
@@ -15,8 +16,8 @@ const skillsArray = [
     { name: "Docker", logo: "docker" },
 ]
 
-export const Skills = () => {
-    return <div className="skills">
+export const Skills = ({ innerRef }) => {
+    return <div ref={innerRef}  className="skills">
         <div className="skills__header">Umiejętności</div>
 
         <div className="skills-list">
@@ -24,3 +25,7 @@ export const Skills = () => {
         </div>
     </div>
 }
+
+Skills.propTypes = {
+    innerRef: PropTypes.shape({ current: PropTypes.any }).isRequired,
+};

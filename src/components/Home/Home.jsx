@@ -1,7 +1,8 @@
 import "./Home.scss"
+import PropTypes from "prop-types";
 
-export const Home = () => {
-    return <div className="home">
+export const Home = ({ innerRef }) => {
+    return <div ref={innerRef} className="home">
         <div className="home__header">
             <div className="home__name">
                 <span>Oliwier Paśko</span>
@@ -16,3 +17,7 @@ export const Home = () => {
         </div>
     </div>
 }
+
+Home.propTypes = {
+    innerRef: PropTypes.shape({ current: PropTypes.any }).isRequired,
+};
