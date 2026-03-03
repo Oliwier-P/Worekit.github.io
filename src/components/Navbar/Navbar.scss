@@ -1,0 +1,23 @@
+.navbar {
+  position: fixed;
+  top: 2rem;
+  left: 50%;
+  display: flex;
+  background-color: #2B2C2C;
+  border-radius: 5rem;
+  width: fit-content;
+  max-width: 95%;
+  gap: clamp(0.5rem, 2vw, 3rem);
+  padding: clamp(0.5rem, 2vw, 1rem) clamp(1rem, 4vw, 3rem);
+  transform: translate(-50%);
+
+  &__item {
+    font-size: clamp(0.5rem, 0.5rem + 1.2vw, 1.2rem);
+    font-family: "Poppins", sans-serif;
+    color: #fff;
+    border: none;
+    background: none;
+    cursor: pointer;
+    text-wrap: nowrap;
+  }
+}
