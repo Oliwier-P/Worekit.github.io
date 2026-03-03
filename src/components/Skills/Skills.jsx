@@ -6,11 +6,13 @@ const skillsArray = [
     { name: "SASS" },
     { name: "Javascript" },
     { name: "Typescript" },
-    { name: "SQL" },
     { name: "Postgres" },
     { name: "SQLite" },
     { name: "Node.js" },
     { name: "Git" },
+    { name: "GitHub" },
+    { name: "Figma" },
+    { name: "Docker" },
 ]
 
 export const Skills = () => {

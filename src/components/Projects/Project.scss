@@ -1,0 +1,63 @@
+.project {
+  width: clamp(280px, 45%, 500px);
+  padding: 20px;
+  font-family: "Poppins", sans-serif;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+
+    .name {
+      font-size: clamp(1.5rem, 2vw, 2.5rem);
+      color: #fff;
+    }
+
+    .github {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background-color: #292929;
+      flex-shrink: 0;
+    }
+  }
+
+  &-content {
+    background-color: #292929;
+    padding: 10px;
+    border-radius: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+    &__description {
+      font-size: clamp(0.9rem, 1vw, 1.2rem);
+      color: #fff;
+    }
+
+    &__preview {
+      width: 100%;
+      aspect-ratio: 16 / 9;
+      border-radius: 0.5rem;
+    }
+  }
+
+  &-technologies {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.7rem;
+    margin-top: 1rem;
+
+    &__item {
+      color: #fff;
+      font-size: 0.9rem;
+      background-color: #424242;
+      padding: 6px 12px;
+      border-radius: 1rem;
+    }
+  }
+}
